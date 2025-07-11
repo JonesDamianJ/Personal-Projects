@@ -33,7 +33,7 @@ header.introheader{
         "header header"
         "sidebar main"
         "footer footer";
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr 3fr;
     height: 100vh;
 }
