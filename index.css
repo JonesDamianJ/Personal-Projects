@@ -21,6 +21,7 @@ header.introheader{
     color: white;
     text-decoration: none;
     padding: 10px 15px;
+    font-size:1rem;
 }
 #navbar a:hover{
     box-shadow: rgba(240, 128, 128, 0.724) 0 0 10px 5px;
@@ -48,9 +49,18 @@ header.introheader{
 }
 .sidebar{
     grid-area: sidebar;
+    border: 2px solid #4628ce;
+    border-radius: 20px;
 }
 .main{
     grid-area: main;
+    display:grid;
+    grid-template-areas:
+    "goalsheader goalsheader"
+    "goals1 goals2";
+    grid-template-rows: .1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    line-height: 50px;
 }
 .footer{
     grid-area: footer;
@@ -64,5 +74,36 @@ header.introheader{
 }
 .flexitem-pas{
     text-align: center;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
 }
-
+.flexgoals{
+    display:flex;
+    flex-direction: column;
+    Border: 2px solid white;
+    border-radius: 20px;
+    grid-area:goals1;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.flexgoals2{
+     display:flex;
+    flex-direction: column;
+    Border: 2px solid white;
+    border-radius: 20px;
+    grid-area:goals2;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+#goalsheader{
+    grid-area:goalsheader;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
